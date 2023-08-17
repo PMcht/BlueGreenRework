@@ -1,0 +1,42 @@
+#SearchBar{
+    min-height: 10rem;
+    width: 70%;
+    ul{
+        padding: 0;
+        margin-bottom: 0;
+        :first-child{
+            margin-left: 0rem;
+        }
+        li{
+            background: #f3f3f3;
+            margin: 0 0.5rem;
+            padding: 1rem 1rem 0.7rem;
+            border-radius: 1rem 1rem 0 0rem;
+            border-bottom: 1px solid #f3f3f3;
+            &.active{
+                background: #fff
+            }
+        }
+    }
+}
+
+.SearchBox{
+    width: 100%;
+    min-height: 5rem;
+    margin-top: 0;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0 1rem 1rem 1rem;
+    input{
+        width: 100%;
+        min-height: 3rem;
+        border-radius: 1rem;
+        border: none;
+        background-color: #f3f3f3;
+        padding: 0 1rem;
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
