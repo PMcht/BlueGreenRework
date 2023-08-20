@@ -1,29 +1,34 @@
 #RegionList{
-    margin: 4rem auto;
+    margin: 6rem auto;
     p{
         margin: 0;
     }
 }
 
-.List{
-    margin-top: 4rem;
-    position: relative;
-    align-items: flex-start;
-    text-align: center;
-    overflow: hidden;
+
     .card{
-        min-height: 10rem;
-        width: 10rem;
+        min-width: 12%;
         text-decoration: none;
+        text-align: center;
         .border{
-            aspect-ratio: 1/1;
             width: 100%;
-            border: 1px solid blue;
+            aspect-ratio: 1/1;
             border-radius: 1rem;
             margin-bottom: 1rem;
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            transition: all .1s ease-in;
+        }
+        &:hover{
+            .border{
+                transform: scale(1.03);
+                
+            }
         }
     }
-}
+
 
 .Arrow{
     width: 3rem;
@@ -31,13 +36,21 @@
     background: #fff;
     border-radius: 100%;
     position: absolute;
-    top: 3.5rem;
+    top: 40%;
+    cursor: pointer;
     z-index: 2;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 3rem;
     &.Left{
         left: 0.2rem;
     }
     &.Right{
         right: 0.2rem;
     }
+}
+
+.test{
+    position: relative;
+    overflow: hidden;
+    min-height: calc(auto + 5vh);
 }

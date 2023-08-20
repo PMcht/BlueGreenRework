@@ -1,0 +1,46 @@
+.carousel {
+  position: relative;
+
+  margin-top: 3rem;
+}
+
+.carousel-slider {
+  display: flex;
+  transition: 0.3s;
+  gap: 2%
+}
+
+.carousel-slide {
+  min-width: 15%;
+  max-width: 15%;
+}
+
+.carousel-slide img {
+  display: block;
+  width: 100%;
+  height: 36em;
+  object-fit: cover;
+}
+
+.carousel button {
+  font-size: inherit;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  padding: 1em;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-prev {
+  left: 0.5em;
+}
+
+.carousel-next {
+  right: 0.5em;
+}
+
