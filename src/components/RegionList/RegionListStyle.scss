@@ -1,0 +1,43 @@
+#RegionList{
+    margin: 4rem auto;
+    p{
+        margin: 0;
+    }
+}
+
+.List{
+    margin-top: 4rem;
+    position: relative;
+    align-items: flex-start;
+    text-align: center;
+    overflow: hidden;
+    .card{
+        min-height: 10rem;
+        width: 10rem;
+        text-decoration: none;
+        .border{
+            aspect-ratio: 1/1;
+            width: 100%;
+            border: 1px solid blue;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.Arrow{
+    width: 3rem;
+    height: 3rem;
+    background: #fff;
+    border-radius: 100%;
+    position: absolute;
+    top: 3.5rem;
+    z-index: 2;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    &.Left{
+        left: 0.2rem;
+    }
+    &.Right{
+        right: 0.2rem;
+    }
+}

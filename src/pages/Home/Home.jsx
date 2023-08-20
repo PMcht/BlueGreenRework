@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.scss'
 import Navbar from '../../components/Navbar/Navbar'
 import SearchBar from '../../utils/SearchBar/SearchBar'
+import RegionList from '../../components/RegionList/RegionList'
 
 const Home = () => {
   return (
@@ -21,10 +22,7 @@ const Home = () => {
 
         </div>  
 
-        <div className='fullWidth flex center justify'>
-          <h2>46 Golfs partout en France</h2>
-          <img src="home/map.webp" alt="Carte des Golfs France" id="map" />
-        </div>
+        <RegionList />
 
       </>
   )
