@@ -71,7 +71,9 @@ const RegionList = () => {
 
 
         <a key={region.id} href="" className='carousel-slide card flex flex-h center justify'>
-            <div className='border' style={{backgroundImage: `url(${region.img})`}} />
+            <div className='border' >
+                <div className="borderRelative" style={{backgroundImage: `url(${region.img})`}} />
+            </div>
             <p>{region.title}</p>
         </a>
 

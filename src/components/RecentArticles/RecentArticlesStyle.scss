@@ -1,0 +1,38 @@
+#recentArticles{
+    gap: 0 3%;
+    h2{
+        margin: 0
+    }
+}
+
+.articleContainer{
+    width: 100%;
+}
+
+.article{
+    min-width: 30%;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: left;
+    *:not(.articleIMG){
+        margin-left: 2rem;
+    }
+    .articleIMG{
+        width: 100%;
+        height: 10rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .articleTitle{
+        font-weight: bold;
+    }
+}
+
+.smallBorder{
+    width: 20%;
+    height: 1px;
+    background-color: #10bae7
+}

@@ -3,7 +3,9 @@ import './Home.scss'
 import Navbar from '../../components/Navbar/Navbar'
 import SearchBar from '../../utils/SearchBar/SearchBar'
 import RegionList from '../../components/RegionList/RegionList'
-import NewsLetter from '../../components/Newsletter/NewsLetter'
+import HowTo from '../../components/HowTo/HowTo'
+import RecentArticles from '../../components/RecentArticles/RecentArticles'
+import Separator from '../../components/Separator/Separator'
 
 const Home = () => {
   return (
@@ -25,7 +27,11 @@ const Home = () => {
 
         <RegionList />
 
-        <NewsLetter />
+        <Separator />
+
+        <RecentArticles />
+
+        <HowTo />
 
       </>
   )
