@@ -8,8 +8,12 @@ import RecentArticles from '../../components/RecentArticles/RecentArticles'
 import Separator from '../../components/Separator/Separator'
 import DownloadSection from '../../components/DownloadSection/DownloadSection'
 import Numbers from '../../components/Numbers/Numbers'
+import FadeIn from '../../Hooks/FadeIn'
 
 const Home = () => {
+
+  FadeIn('.scrollTriggered')
+
   return (
       <>
         <Navbar />
@@ -33,8 +37,6 @@ const Home = () => {
         <RecentArticles />
 
         <HowTo />
-
-        <Separator />
 
         <Numbers />
 

@@ -3,7 +3,7 @@ import './DownloadSectionStyle.scss'
 
 const DownloadSection = () => {
   return (
-    <div className='widthControl margin flex center justify-center' id="App">
+    <div className='widthControl margin flex center justify-center toShow scrollTriggered' id="App">
 
       <div className='textApp'>
         <h2>Une app pour tout vos besoins</h2>

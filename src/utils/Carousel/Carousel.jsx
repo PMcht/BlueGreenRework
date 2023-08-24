@@ -29,7 +29,7 @@ const anim = (ms = animation) => {
     const cMod = mod(c, tot);
     // Move slider
     elCarouselSlider.style.transitionDuration = `${ms}ms`;
-    if (window.matchMedia("(max-width: 1224px)")) {
+    if (window.matchMedia("(max-width: 1224px)").matches) {
         elCarouselSlider.style.transform = `translateX(${(-c) * 50}%)`;
     } else {
         elCarouselSlider.style.transform = `translateX(${(-c) * 17}%)`;
