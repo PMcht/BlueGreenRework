@@ -61,3 +61,12 @@
     overflow: hidden;
     min-height: calc(auto + 5vh);
 }
+
+/* Small devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 1224px) {
+    .card{
+        min-width: 80%;
+        text-decoration: none;
+        text-align: center;
+    }
+}

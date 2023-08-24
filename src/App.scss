@@ -36,12 +36,6 @@ a{
     max-width: 1224px
 }
 
-/* Small devices (laptops/desktops, 992px and down) */
-@media only screen and (max-width: 1224px) {
-    .flex{
-        flex-direction: column;
-    }
-}
 
 .margin{
     margin: 4rem auto;
@@ -70,4 +64,26 @@ h2{
     font-size: 0.8rem;
     font-style: italic;
     margin: 0;
+}
+
+.onlyMobile{
+    display: none;
+}
+
+
+/* Small devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 1224px) {
+    html{
+        text-align: center;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .fullWidth{
+        max-width: 85%;
+        padding: 0;    
+    }
+    .onlyMobile{
+        display: block;
+    }
 }

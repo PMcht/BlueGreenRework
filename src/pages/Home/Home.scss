@@ -10,6 +10,22 @@
     margin: 0 5rem;
 }
 
-#map{
-    max-width: 40%;
+/* Small devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 1224px) {
+    #HeroIMG{
+        display: flex;
+        align-items: center;
+        background-image:none;
+        min-height: unset;
+        .onlyMobile{
+            max-width: 80%;
+            margin: 0 auto 3rem;
+        }
+    }
+    .SeventyWidth{
+        width: 100%;
+        height: 100%;
+        max-width: unset;
+        margin: 3rem auto;
+    }
 }

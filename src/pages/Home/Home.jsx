@@ -17,6 +17,7 @@ const Home = () => {
         <div className='fullWidth flex flex-h flex-align flex-h-spacing margin' id="HeroIMG">
 
           <div className='SeventyWidth'>
+            <img src="/navbar/Logo.svg" className='onlyMobile' />
             <h1>Bienvenue chez Bluegreen</h1>
             <h1>N°1 du golf en France</h1>
             <p>Toutes les infos à portée de click</p>

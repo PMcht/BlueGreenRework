@@ -40,3 +40,23 @@
     height: 1px;
     background-color: #10bae7
 }
+
+
+/* Small devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 1224px) {
+    .articleContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        .article{
+            min-width: 80%;
+            margin: auto;
+        }
+        .articleIMG{
+            height: 15rem;
+        }
+    }
+    
+}

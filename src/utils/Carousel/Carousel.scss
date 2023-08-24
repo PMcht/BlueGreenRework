@@ -44,3 +44,19 @@
   right: 0.5em;
 }
 
+
+
+/* Small devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 1224px) {
+  .carousel-slide {
+    min-width: 40%;
+    max-width: 40%;
+  }
+  .carousel-slider {
+    gap: 10%
+  }
+  .carousel {
+    margin-left: 10%
+  }
+  
+}

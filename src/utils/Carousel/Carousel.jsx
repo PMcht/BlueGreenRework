@@ -12,7 +12,6 @@ const mod = (n, m) => (n % m + m) % m;
 export const carousel = (elCarousel) => {
 
 const animation = 500;
-const pause = 5000;
 // Or use something like: const animation = Math.abs(elCarousel.dataset.carouselAnimation ?? 500);
 
 const elCarouselSlider = el(".carousel-slider", elCarousel);
@@ -30,7 +29,12 @@ const anim = (ms = animation) => {
     const cMod = mod(c, tot);
     // Move slider
     elCarouselSlider.style.transitionDuration = `${ms}ms`;
-    elCarouselSlider.style.transform = `translateX(${(-c) * 17}%)`;
+    if (window.matchMedia("(max-width: 1224px)")) {
+        elCarouselSlider.style.transform = `translateX(${(-c) * 50}%)`;
+    } else {
+        elCarouselSlider.style.transform = `translateX(${(-c) * 17}%)`;
+    }
+    
     // Handle active classes (slide and bullet)
     elsSlides.forEach((elSlide, i) => elSlide.classList.toggle("is-active", cMod === i));
     elsBtns.forEach((elBtn, i) => elBtn.classList.toggle("is-active", cMod === i));

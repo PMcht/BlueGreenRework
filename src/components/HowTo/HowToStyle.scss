@@ -31,3 +31,28 @@
     max-height: 2rem;
     margin-right: 2rem;
 }
+
+
+
+/* Small devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 1224px) {
+    #howTo{
+        max-height: unset;
+        .halfRight{
+            display: none;
+        }
+        .halfLeft{
+            width:70%;
+            height: 100%;
+            ul{
+                padding-left: 0rem;
+            }
+            .smallIcons{
+                margin-right: 0rem;
+            }
+        }
+        .aboutContent{
+            padding: 3rem 0;
+        }
+    }
+}
