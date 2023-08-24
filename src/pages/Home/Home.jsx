@@ -6,6 +6,8 @@ import RegionList from '../../components/RegionList/RegionList'
 import HowTo from '../../components/HowTo/HowTo'
 import RecentArticles from '../../components/RecentArticles/RecentArticles'
 import Separator from '../../components/Separator/Separator'
+import DownloadSection from '../../components/DownloadSection/DownloadSection'
+import Numbers from '../../components/Numbers/Numbers'
 
 const Home = () => {
   return (
@@ -21,8 +23,6 @@ const Home = () => {
             
           </div>
 
-            <SearchBar />
-
         </div>  
 
         <RegionList />
@@ -32,6 +32,14 @@ const Home = () => {
         <RecentArticles />
 
         <HowTo />
+
+        <Separator />
+
+        <Numbers />
+
+        <Separator />
+
+        <DownloadSection />
 
       </>
   )

@@ -9,7 +9,7 @@ const SearchBar = () => {
           <li>Espace abonné</li>
         </ul>
         <div className='SearchBox flex center justify'>
-          <input type="text" placeholder="Search.." />
+          <input type="text" placeholder="Rechercher ..." />
         </div>
     </div>
   )

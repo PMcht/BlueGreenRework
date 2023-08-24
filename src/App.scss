@@ -36,15 +36,20 @@ a{
     max-width: 1224px
 }
 
+/* Small devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 1224px) {
+    .flex{
+        flex-direction: column;
+    }
+}
+
 .margin{
-    margin: 2rem auto;
+    margin: 4rem auto;
 }
 
 .fullWidth{
     max-width: 85%;
-    margin: auto;
     padding: 7rem 13rem;
-    aspect-ratio: 16/6;
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -57,5 +62,12 @@ h1{
     font-weight: 600
 }
 h2{
+    margin: 0;
+}
+
+.thin{
+    font-weight: 300;
+    font-size: 0.8rem;
+    font-style: italic;
     margin: 0;
 }

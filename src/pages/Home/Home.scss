@@ -1,11 +1,13 @@
 
 #HeroIMG{
     background-image: url('/home/heroIMG.jpg');
+    min-height: 60vh;
 }
 
 .SeventyWidth{
     max-width: 70%;
     height: 100%;
+    margin: 0 5rem;
 }
 
 #map{
