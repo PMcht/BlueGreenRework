@@ -1,22 +1,26 @@
 import React from 'react'
 import './NavbarStyle.scss'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div id="navbar" className='flex justify widthControl margin center'>
+    <nav id="navbar" className='flex justify widthControl margin center'>
 
-    <img src="navbar\Logo.svg" alt="Bluegreen Logo" />
+        <Link to=''>
+            <img src="navbar\Logo.svg" alt="Bluegreen Logo" />
+        </Link>
+        
 
-    <ul className='flex'>
-        <li><a>Nos Golfs</a></li>
-        <li><a>Nos Offres</a></li>
-        <li><a>Enseignements</a></li>
-        <li><a>Actualités</a></li>
-    </ul>
-    
-    <a>Espace Client</a>
+        <ul className='flex'>
+            <li><Link to="/Nos-Golfs">Nos Golfs</Link></li>
+            <li><Link to="/Nos-Offres">Nos Offres</Link></li>
+            <li><Link to="/Enseignements">Enseignements</Link></li>
+            <li><Link to="/Actualites">Actualités</Link></li>
+        </ul>
+        
+        <Link to="/Mon-Espace">Espace Client</Link>
 
-</div>
+    </nav>
   )
 }
 

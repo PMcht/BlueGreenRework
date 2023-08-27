@@ -1,23 +1,27 @@
 import React, { useEffect } from 'react'
 import './RegionListStyle.scss'
 import { carousel } from '../../utils/Carousel/Carousel';
-import { RegionAttributes } from '../../utils/Lists/Regions';
+import { GolfAttributes } from '../../utils/Lists/Golfs';
+import { Link } from 'react-router-dom';
 
 
 
 const RegionList = () => {
 
+        let fileteredRegion = GolfAttributes.filter(
+            (golf, index) =>
+              GolfAttributes.findIndex((item) => item.region === golf.region) === index
+          );
 
-    const listRegion = RegionAttributes.map( (region, index) => (
+        const listRegion = fileteredRegion
 
-
-        <a key={region.id} href="" className='carousel-slide card flex flex-h center justify'>
-            <div className='border' >
-                <div className="borderRelative" style={{backgroundImage: `url(${region.img})`}} />
-            </div>
-            <p>{region.title}</p>
-        </a>
-
+            .map( (region, index) => (
+                <Link key={region.id} className='carousel-slide card flex flex-h center justify'>
+                    <div className='border' >
+                        <div className="borderRelative" style={{backgroundImage: `url(${region.img})`}} />
+                    </div>
+                    <p>{region.region}</p>
+                </Link>
 
         ));
 
