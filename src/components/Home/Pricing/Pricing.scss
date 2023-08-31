@@ -1,0 +1,16 @@
+#prices{
+    h2, p{
+        margin: 0;
+    }
+    #cardPrices{
+        margin-top: 5rem;
+        width: 100%;
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: center;
+        gap: 3%;
+        .card{
+            width: 20rem;
+        }
+    }
+}

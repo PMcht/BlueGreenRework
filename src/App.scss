@@ -95,3 +95,50 @@ a{
         transform: scale(1.04);
     }
 }
+
+
+
+.st0{fill:#1e3968}.st1{fill:#027cba}
+
+
+
+.card{
+    height: 100%;
+    background: #fff;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    &:hover{
+        transform: scale(1.02);
+    }
+    .cardText{
+        padding: 2rem;
+    }
+
+    .illustration{
+        width: 100%;
+        height: 20rem;
+        background-size: cover;
+        background-position: center;
+    }
+    
+}
+
+.left{
+    width: 40%;
+    height: 100%;
+    background-color: #027cba;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+.right{
+    width: 60%;
+    height: 100%;
+    background-color: #027dba0c;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}

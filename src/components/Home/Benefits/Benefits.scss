@@ -1,0 +1,43 @@
+#benefits{
+    width: 100%;
+    min-height: 50rem;
+    position: relative;
+
+
+   .mySwiper{
+    height: 50rem;
+    width: 100%;
+    .SwiperSlide{
+      overflow: hidden;
+    }
+    .flex {
+      height: 50rem;
+      width: 100%;
+      position: relative;
+      gap: 10%;
+
+      .slideIMG{
+        height: 80%;
+        z-index: 2;
+       }
+       .textSlide{
+        max-width: 40%;
+        z-index: 3;
+       }
+    }
+   }
+
+
+}
+
+.backgroundName{
+  position: absolute;
+  margin: 0;
+  top: 5%;
+  left: 5%;
+  max-width: 40%;
+  font-size: 25rem;
+  line-height: 18rem;
+  color: #0000000a;
+  user-select: none;
+}
