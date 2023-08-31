@@ -37,15 +37,17 @@ const GolfList = () => {
       mountOnEnter={true}
       >
       {(state) => (
-        <div style={{
+        <Link style={{
           ...defaultStyle,
           ...transitionStyles[state]
           }} className='golfCard'>
           {children}
-        </div>
+        </Link>
       )}
     </Transition>
   );
+
+  let isResults = GolfFiltered == 0
 
   return (
     <>
@@ -53,16 +55,20 @@ const GolfList = () => {
         <div id="GolfList" className='flex center justify fullWidth flex-h margin'>
 
             <h1>Nos 46 Golfs</h1>
-            <h3>Rechercher un golf prêt de chez vous!</h3>
-            <input id="search" type="search" placeholder="Search..." autofocus required onChange={(e) => {onInputChange(e.target)}} />
+            <h3>Trouvez un golf près de chez vous!</h3>
+            <input id="search" type="search" placeholder="Rechercher..." autoFocus onChange={(e) => {onInputChange(e.target)}} />
 
+            {isResults ? (
 
+              <p>Aucun résultat, essayez de rechercher par région</p>
 
-            <TransitionGroup className='flex center justify-center flex-wrap margin' id="golfContainer">
-                {GolfFiltered.map((golf, index) => {
+            ) : (
+                
+                <TransitionGroup className='flex center justify-center flex-wrap margin' id="golfContainer">
+                {GolfFiltered.map((golf) => {
                 return (
 
-                    <FadeTransition key={index} >
+                    <FadeTransition key={golf.id} >
 
                             <div className='golfImageContainer flex center'>
                                 <img src={golf.img} className='golfImage'/>
@@ -75,7 +81,9 @@ const GolfList = () => {
                     </FadeTransition>
                     )
                 })}
-            </TransitionGroup>
+                </TransitionGroup>
+            )}
+
 
         </div>
 

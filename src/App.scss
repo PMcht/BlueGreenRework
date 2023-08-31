@@ -15,12 +15,23 @@
     &.flex-align{
         align-items: flex-start !important;
     }
-    &.flex-h-spacing{
-        align-content: space-between;
-    }
     &.flex-wrap{
         flex-wrap: wrap;
     }
+    &.flex-Left{
+        justify-content: flex-start;
+    }
+}
+
+.gray{
+    color:#707070 !important
+}
+.dark{
+    color: #000 !important
+}
+
+.shadow{
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 ul{
@@ -30,63 +41,57 @@ ul{
     }
 }
 
+
+
 a{
     text-decoration: none;
     color: black
 }
 
-.widthControl{
-    max-width: 1224px
-}
-
-
-.margin{
-    margin: 4rem auto;
-}
-
 .fullWidth{
-    max-width: 85%;
     padding: 7rem 13rem;
     background-position: center;
     background-size: cover;
     overflow: hidden;
 }
-
-h1{
-    margin: 0;
-    font-size: 2.5rem;
-    line-height: 3rem;
-    font-weight: 600
+.halfWidth{
+    width: 60%;
 }
-h2{
-    margin: 0;
+.fullHeight{
+    height: 100%;
+    border: 1px solid red;
 }
 
-.thin{
-    font-weight: 300;
-    font-size: 0.8rem;
-    font-style: italic;
-    margin: 0;
+.margin{
+    margin: 4rem auto;
 }
+
+
+
 
 .onlyMobile{
     display: none;
 }
 
+.white-Color{
+    p, h1, h2, h3, h4, h5, a{
+        color: #fff;
+    }
+}
 
-/* Small devices (laptops/desktops, 992px and down) */
-@media only screen and (max-width: 1224px) {
-    html{
-        text-align: center;
-    }
-    .flex{
-        flex-direction: column;
-    }
-    .fullWidth{
-        max-width: 85%;
-        padding: 0;    
-    }
-    .onlyMobile{
-        display: block;
+
+
+.button{
+    padding: 1.8rem 3rem;
+    margin-top: 4rem;
+    width: fit-content;
+    font-weight: bold;
+    border-radius: 2rem;
+    background: #01a9f2;
+    color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: all .3s ease-in-out;
+    &:hover{
+        transform: scale(1.04);
     }
 }

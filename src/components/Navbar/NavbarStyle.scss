@@ -1,15 +1,23 @@
 #navbar{
-    max-height: 5rem;
+    min-height: 5rem;
+    z-index: 100;
+    padding: 1rem 0rem 0 3rem;
+    width: 100%;
     margin-top: 0;
     font-weight:500;
+    position: absolute;
+    top: 0;
+    left: 0;
     img{
         min-width: 10rem;
         min-height: 5rem;
     }
-}
-
-@media only screen and (max-width: 1224px) {
-    #navbar{
-        display: none;
+    #AccountIcons{
+        min-width: 10rem;
+        svg{
+            margin-right: 0.4rem;
+            max-height: 1.4rem;           
+        }
+        
     }
 }
