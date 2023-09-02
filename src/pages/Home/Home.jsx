@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
       <>
-        <section id="Hero" className='white-Color flex center fullWidth'>
+        <section id="Hero" className='white-Color flex center'>
 
           <div className='halfWidth'>
 
@@ -28,7 +28,7 @@ const Home = () => {
 
           </div>
 
-          <div className='flex center' id="cardsHero">
+          <div className='flex center notOnMobile' id="cardsHero">
 
             <div className='cards flex center shadow'>
               <img src='./pages/home/1.png' />

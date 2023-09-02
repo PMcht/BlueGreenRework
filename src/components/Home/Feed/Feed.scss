@@ -1,12 +1,11 @@
 #instaGrid{
     display: grid;
-    margin-top: 5rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(19.415rem, 100%), 1fr));
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-  }
   
   .square {
     aspect-ratio: 1/ 1;
@@ -35,3 +34,8 @@
     }
   }
   
+@media (max-width: 700px) {
+  #instaGrid{
+    grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 10rem));
+}
+}

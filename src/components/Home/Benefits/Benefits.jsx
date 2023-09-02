@@ -14,8 +14,8 @@ import { Link } from 'react-router-dom';
 const Benefits = () => {
   return (
     <div id="benefits">
-        <div className='left' />
-        <div className='right' />
+        <div className='left notOnMobile' />
+        <div className='right notOnMobile' />
         <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -31,10 +31,10 @@ const Benefits = () => {
                   <p className='backgroundName'>APP MOBILE</p>
                   <div className='flex center justify-center'>
                     
-                    <img src='./app/appMock.png' className='slideIMG' />
+                    <img src='./pages/Slider/appMock.png' className='slideIMG' />
                     <div className='textSlide'>
-                      <p className='text-small gray'>Notre application mobile</p>
-                      <h2 className='text-large'>Application Bluegreen pour Iphone et Android</h2>
+                      <p className='text-small gray notOnMobile'>Notre application mobile</p>
+                      <h2 className='text-large'>Application Bluegreen pour mobiles</h2>
                       <p className='text-small'>Réservez votre départ, comptez vos coups, controlez vos distances et plus encore avec l'application Bluegreen</p>
                       <Link>
                           <div className='button text-smaller'>
@@ -51,14 +51,14 @@ const Benefits = () => {
                   <div className='flex center justify-center'>        
                     <div className='textSlide'>
                       <h2 className='text-large'>46 Golfs partout en France</h2>
-                      <p className='text-small'>Où que vous soyez, il y a un golf Bluegreen à proximité. Nous sommes N°1 en France pour une raison</p>
+                      <p className='text-small'>Où que vous soyez, il y a un golf Bluegreen à proximité car notre réseau inclu un total de 46 golfs en France</p>
                       <Link>
                           <div className='button text-smaller'>
                             Découvrez nos Golfs
                           </div>
                       </Link>
                     </div>
-                    <img src='./pages/svg-map.svg' className='slideIMG' />
+                    <img src='./pages/Slider/svg-map.svg' className='slideIMG' />
                   </div>
                   <p className='backgroundName'>PARTOUT FRANCE</p>
                 </SwiperSlide>
@@ -69,8 +69,8 @@ const Benefits = () => {
                     
                     <img src='./pages/Slider/Proshop.png' className='slideIMG' />
                     <div className='textSlide'>
-                      <p className='text-small gray'>Nos boutiques connectées</p>
-                      <h2 className='text-large'>Nos Proshops</h2>
+                      <p className='text-small gray notOnMobile'></p>
+                      <h2 className='text-large'>Découvrez nos Proshops connectés</h2>
                       <p className='text-small'>Profitez d'un large choix d'équipements pour vos parties ; clubs et vêtements livrés à votre proshop</p>
                       <Link>
                           <div className='button text-smaller'>

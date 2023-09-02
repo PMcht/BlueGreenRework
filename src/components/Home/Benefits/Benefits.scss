@@ -8,7 +8,7 @@
     height: 50rem;
     width: 100%;
     .SwiperSlide{
-      overflow: hidden;
+      overflow-x: hidden;
     }
     .flex {
       height: 50rem;
@@ -40,4 +40,36 @@
   line-height: 18rem;
   color: #0000000a;
   user-select: none;
+}
+
+@media (max-width: 700px) {
+  #benefits{
+     min-height: 50rem;
+    .mySwiper{
+      height:auto;
+      width: 100%;
+      .button{
+        margin: auto;
+      }
+      
+      .flex {
+        height: 100%;
+        gap: 10%;
+        flex-direction: column;
+        padding: 5rem 0;
+        &:nth-child(odd){
+          flex-direction: column-reverse;
+        }
+        .slideIMG{
+          height: unset;
+          max-height: 40vh;
+          z-index: 2;
+        }
+        .textSlide{
+          max-width: 90%;
+          z-index: 3;
+        }
+      }
+    }
+  }
 }

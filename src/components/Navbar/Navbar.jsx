@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './NavbarStyle.scss'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChildReaching, faGolfBall, faNewspaper, faTags, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faChildReaching, faClose, faGolfBall, faHome, faNewspaper, faTags, faUser } from '@fortawesome/free-solid-svg-icons'
 import Logo from '../../utils/SVG/Logo'
 
 
@@ -58,33 +58,34 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="container">
-        <div className="logo">
-          <Link><Logo /></Link>
-        </div>
-        <div className="menu-icon" onClick={handleShowNavbar}>
-          <Hamburger />
-        </div>
-        <div className={`nav-elements  ${showNavbar && "active"}`}>
-          <ul>
-            <li>
-              <Link to="/" className='links'><FontAwesomeIcon icon={faGolfBall} />Nos Golfs</Link>
-            </li>
-            <li>
-              <Link to="/blogs" className='links'><FontAwesomeIcon icon={faTags} />Nos Offres</Link>
-            </li>
-            <li>
-              <Link to="/projects" className='links'><FontAwesomeIcon icon={faChildReaching} />Enseignements</Link>
-            </li>
-            <li>
-              <Link to="/about" className='links'><FontAwesomeIcon icon={faNewspaper} />Actualité</Link>
-            </li>
-            <li>
-              <Link to="/contact" className='links'><FontAwesomeIcon icon={faUser} />Espace Client</Link>
-            </li>
-          </ul>
-        </div>
+      <div className='navMenu'>
+            <div className="menu-icon openMenu" onClick={handleShowNavbar}>
+                <Hamburger />
+            </div>
+            <div className={`nav-elements  ${showNavbar && "active"}`}>
+              <ul>
+                <li>
+                  <Link to="/BlueGreenRework" className='links flex center'><FontAwesomeIcon icon={faHome} /><p>Home</p></Link>
+                </li>
+                <li>
+                  <Link to="/Nos-Golfs" className='links flex center'><FontAwesomeIcon icon={faGolfBall} /><p>Nos Golfs</p></Link>
+                </li>
+                <li>
+                  <Link to="/blogs" className='links flex center'><FontAwesomeIcon icon={faTags} /><p>Nos Offres</p></Link>
+                </li>
+                <li>
+                  <Link to="/about" className='links flex center'><FontAwesomeIcon icon={faNewspaper} /><p>Actualité</p></Link>
+                </li>
+                <li>
+                  <Link to="/contact" className='links flex center'><FontAwesomeIcon icon={faUser} /><p>Espace Client</p></Link>
+                </li>
+                <li className="menu-icon close" onClick={handleShowNavbar}>
+                  <FontAwesomeIcon icon={faClose} />
+                </li>
+              </ul>
+            </div>
       </div>
+
     </nav>
   )
 }

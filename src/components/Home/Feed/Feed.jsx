@@ -9,7 +9,7 @@ const Feed = () => {
         <h2 className='text-large'>Feed Instagram</h2>
         <p className='text-small gray'>@GolfsBluegreen</p>
 
-        <div id="instaGrid" className='grid'>
+        <div id="instaGrid">
 
             <div className="square fullImg"><img src='/pages/Insta/1.jpg' className='instaIMG' /></div>
             <div className="square fullImg"><img src='/pages/Insta/2.jpg' className='instaIMG' /></div>

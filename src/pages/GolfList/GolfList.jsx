@@ -52,7 +52,7 @@ const GolfList = () => {
   return (
     <>
         
-        <div id="GolfList" className='flex center justify fullWidth flex-h margin'>
+        <div id="GolfList" className='flex center justify fullWidth flex-h margin topMargin'>
 
             <h1>Nos 46 Golfs</h1>
             <h3>Trouvez un golf près de chez vous!</h3>

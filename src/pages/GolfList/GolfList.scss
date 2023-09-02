@@ -1,11 +1,9 @@
-
-
 #golfContainer{
     width: 100%;
     gap: 3rem;
     
     .golfCard{
-        width: 30%;
+        width: 20%;
         border-radius: 1rem;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         height: fit-content;
@@ -18,6 +16,12 @@
         justify-content: flex-start;
         .golfImage{
             width: 100%;
+            transition: all .3s ease-in-out;
+        }
+        &:hover{
+            .golfImage{
+                transform: scale(1.02) rotate(-1deg);
+            }
         }
     }
     .golfName{
