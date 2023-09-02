@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Home.scss'
 import FadeIn from '../../Hooks/FadeIn'
 import { Link } from 'react-router-dom'
@@ -9,7 +9,7 @@ import Feed from '../../components/Home/Feed/Feed'
 
 const Home = () => {
 
-  FadeIn('.scrollTriggered')
+  FadeIn('.scrollTriggered');
 
   return (
       <>

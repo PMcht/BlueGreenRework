@@ -1,23 +1,121 @@
-#navbar{
-    min-height: 5rem;
-    z-index: 100;
-    padding: 1rem 0rem 0 3rem;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+.navbar {
+    height: 60px;
     width: 100%;
-    margin-top: 0;
-    font-weight:500;
-    position: absolute;
+    background-color: #ffffff9c;
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    position: fixed;
     top: 0;
-    left: 0;
-    img{
-        min-width: 10rem;
-        min-height: 5rem;
-    }
-    #AccountIcons{
-        min-width: 10rem;
-        svg{
-            margin-right: 0.4rem;
-            max-height: 1.4rem;           
+    left: 0%;
+    z-index: 10;
+  
+    .cls-1{fill:#003927;}.cls-2{fill:#10bae7;}
+
+        .container {
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        }
+
+
+        .logo {
+            svg{
+                min-width: 8rem;
+            }
+        }
+
+        .menu-icon {
+        display: none;
+        }
+
+        .nav-elements {
+            li{
+                svg{
+                    margin-right: 0.6rem;
+                }
+            }
+        }
+
+        .nav-elements ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        }
+
+        .nav-elements ul li:not(:last-child) {
+        margin-right: 2rem;
+        }
+
+        .nav-elements ul a {
+        font-size: 16px;
+        font-weight: 400;
+        color: #2f234f;
+        text-decoration: none;
+        }
+
+        .links {
+        color: #18272F;
+          position: relative;
+          text-decoration: none;
         }
         
-    }
+        .links::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          border-radius: 4px;
+          background-color: #18272F;
+          bottom: -4px;
+          left: 0;
+          transform-origin: right;
+          transform: scaleX(0);
+          transition: transform .3s ease-in-out;
+        }
+        
+        .links:hover::before {
+          transform-origin: left;
+          transform: scaleX(1);
+        }
+        
+
+        @media (max-width: 768px) {
+        .nav-elements ul li:not(:last-child) {
+            margin-right: 30px;
+        }
+        }
+
+        @media (max-width: 600px) {
+        .menu-icon {
+            display: block;
+            cursor: pointer;
+        }
+
+        .nav-elements {
+            position: absolute;
+            right: 0;
+            top: 60px;
+            background-color: #ffffff9c;
+            width: 0px;
+            height: calc(100vh - 60px);
+            transition: all 0.3s ease-in;
+            overflow: hidden;
+        }
+
+        .nav-elements ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-elements ul li {
+            margin-right: unset;
+            margin-top: 22px;
+        }
+        }
 }

@@ -4,6 +4,7 @@ import Home from './pages/Home/Home'
 import GolfList from './pages/GolfList/GolfList'
 import Navbar from './components/Navbar/Navbar'
 import Offres from './pages/Offres/Offres'
+import Footer from './components/Footer/Footer'
 
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
           <Route path='/Actualites' element={<Home />} />
           <Route path='/Mon-Espace' element={<Home />} />
       </Routes>
+
+      <Footer />
 
     </>
   )
