@@ -68,6 +68,23 @@ color: #18272F;
   transform: scaleX(1);
 }
 
+.espaceClient{
+  position: absolute;
+  font-size: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  top: 1.2rem;
+  right: 2rem;
+  background-color: #ffffff9c;
+  backdrop-filter: blur( 7.5px );
+  -webkit-backdrop-filter: blur( 7.5px );
+  border-radius: 100%;
+  svg{
+    padding: 0;
+    margin: 0%;
+  }
+}
+
 @media (max-width: 700px) {
   .menu-icon {
     display: block;
@@ -79,9 +96,16 @@ color: #18272F;
     }
     &.close{
       margin: auto;
+      width: 5rem;
+      height: 5rem;
       font-size: 4rem;
+      border: 2px solid #18272F;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       svg{
-        margin: auto;
+        margin: 0;
       }
     }
   }

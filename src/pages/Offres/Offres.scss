@@ -1,0 +1,294 @@
+#ageSection{
+    margin: auto;
+    width: fit-content;
+    .card{
+        padding: 1rem;
+    }
+}
+
+:root {
+    --card-line-height: 1.2em;
+    --card-padding: 1em;
+    --card-radius: 0.5em;
+    --color-green: #01aaf2d2;
+    --color-gray: #e2ebf6;
+    --color-dark-gray: #c4d1e1;
+    --radio-border-width: 2px;
+    --radio-size: 1.5em;
+  }
+  
+
+#offres{
+    #heroPrice{
+        margin: 10rem 0 5rem;
+    }
+    .inputs {
+        display: grid;
+        grid-gap: var(--card-padding);
+        margin: 5rem auto 0;
+        width: 80%;
+        padding: 0;
+        text-align: center;
+       
+        @media (min-width: 42em) {
+            grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), auto));
+    
+        }
+    
+        .card {
+            background-color: #fff;
+            border-radius: var(--card-radius);
+            position: relative;
+            
+            &:hover {
+              box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+            }
+          }
+          
+          .radio {
+            font-size: inherit;
+            margin: 0;
+            position: absolute;
+            right: calc(var(--card-padding) + var(--radio-border-width));
+            top: calc(var(--card-padding) + var(--radio-border-width));
+          }
+          
+          @supports(-webkit-appearance: none) or (-moz-appearance: none) { 
+            .radio {
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              background: #fff;
+              border: var(--radio-border-width) solid var(--color-gray);
+              border-radius: 50%;
+              cursor: pointer;
+              height: var(--radio-size);
+              outline: none;
+              transition: 
+                background 0.2s ease-out,
+                border-color 0.2s ease-out;
+              width: var(--radio-size); 
+          
+              &::after {
+                border: var(--radio-border-width) solid #fff;
+                border-top: 0;
+                border-left: 0;
+                content: '';
+                display: block;
+                height: 0.75rem;
+                left: 25%;
+                position: absolute;
+                top: 50%;
+                transform: 
+                  rotate(45deg)
+                  translate(-50%, -50%);
+                width: 0.375rem;
+              }
+          
+              &:checked {
+                background: var(--color-green);
+                border-color: var(--color-green);
+              }
+            }
+            
+            .card:hover .radio {
+              border-color: var(--color-dark-gray);
+              
+              &:checked {
+                border-color: var(--color-green);
+              }
+            }
+          }
+          
+          .plan-details {
+            border: var(--radio-border-width) solid var(--color-gray);
+            border-radius: var(--card-radius);
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            padding: var(--card-padding);
+            transition: border-color 0.2s ease-out;
+          }
+        
+          
+        .plan-type {
+            color: var(--color-green);
+            font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 1em;
+            width: fit-content;
+            margin-right: 3rem;
+          }
+          
+          .plan-cost {
+            font-size: 2.5rem;
+            font-weight: bold;
+            padding: 0.5rem 0;
+          }
+          
+          .card:hover .plan-details {
+            border-color: var(--color-dark-gray);
+          }
+          
+          .radio:checked ~ .plan-details {
+            border-color: var(--color-green);
+          }
+          
+          .radio:focus ~ .plan-details {
+            box-shadow: 0 0 0 2px var(--color-dark-gray);
+          }
+          
+          .radio:disabled ~ .plan-details {
+            color: var(--color-dark-gray);
+            cursor: default;
+          }
+          
+          .radio:disabled ~ .plan-details .plan-type {
+            color: var(--color-dark-gray);
+          }
+          
+          .card:hover .radio:disabled ~ .plan-details {
+            border-color: var(--color-gray);
+            box-shadow: none;
+          }
+          
+          .card:hover .radio:disabled {
+              border-color: var(--color-gray);
+            }
+      }
+      
+    .priceSection{
+        margin: 10rem 0 5rem;
+        padding: 0 20rem;
+        position: relative;
+        height: fit-content;
+        h2{
+            position: relative;
+            &:before{
+                content : '';
+                z-index: -1;
+                width: 150px;
+                height: 10px;
+                position: absolute;
+                left: 0;
+                bottom: 10px;
+                background-color: var(--color-green);
+            }
+        }
+
+        /* SWITCH STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+            .switch{
+                position:absolute;
+                top: 0;
+                right: 20rem;
+            }
+
+            .switch-wrapper {
+                position: relative;
+                display: inline-flex;
+                padding: 4px;
+                border: 1px solid lightgrey;
+                margin-bottom: 40px;
+                border-radius: 30px;
+                background: white;
+                text-align: center;
+            }
+            
+            .switch-wrapper [type="radio"] {
+                position: absolute;
+                left: -9999px;
+            }
+            
+            .switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"],
+            .switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"] {
+                color: white;
+            }
+            
+            .switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"]:hover,
+            .switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"]:hover {
+                background: transparent;
+            }
+            
+            .switch-wrapper
+                [type="radio"]:checked#monthly
+                + label[for="yearly"]
+                ~ .highlighter {
+                transform: none;
+            }
+            
+            .switch-wrapper
+                [type="radio"]:checked#yearly
+                + label[for="monthly"]
+                ~ .highlighter {
+                transform: translateX(100%);
+            }
+            
+            .switch-wrapper label {
+                font-size: 16px;
+                z-index: 1;
+                min-width: 100px;
+                line-height: 32px;
+                cursor: pointer;
+                border-radius: 30px;
+                transition: color 0.25s ease-in-out;
+            }
+            
+            .switch-wrapper label:hover {
+                background: whitesmoke;
+            }
+            
+            .switch-wrapper .highlighter {
+                position: absolute;
+                top: 4px;
+                left: 4px;
+                width: calc(50% - 4px);
+                height: calc(100% - 8px);
+                border-radius: 30px;
+                background: var(--color-green);
+                transition: transform 0.25s ease-in-out;
+            }
+            .hide{
+                display: none;
+            }
+
+        .gridPrice{
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(auto-fill, minmax(min(30rem, 100%), auto));
+            row-gap: 10%;
+            margin-top: 3rem;
+            
+            .card{
+                width: 30rem;
+                text-align: center;
+                height: fit-content;
+                padding: 5rem;
+                .text-medium{
+                    margin: 0;
+                }
+                .flex{
+                    padding: 1rem;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    border-radius: 1rem;
+                    margin-top: 3rem;
+                    justify-content: space-around;
+                    .prices{
+                        width: 60%;
+                        border-right: 2px solid rgba(128, 128, 128, 0.37);
+                    }
+                    .period{
+                        width: 40%;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+      
+}
+
+
