@@ -68,11 +68,11 @@ export const AgeAttributes = [
                 adulte7: "350"
             },
             national: {
-                junior: "279",
-                jeune: "212",
+                junior: "56",
+                jeune: "84",
                 adulte: "209",
-                adulte5: "84",
-                adulte7: "56"
+                adulte5: "212",
+                adulte7: "279"
             },
             Ouest: {
                 junior: "37",

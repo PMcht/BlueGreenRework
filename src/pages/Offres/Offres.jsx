@@ -242,50 +242,29 @@ const Offres = () => {
         <div className='gridPrice'>
 
             <div className='card'>
-              <p className='text-medium bold'>Monde</p>
-              <p>L'abonnement sur la totalité de nos golfs</p>
-              <div className='flex center price monthly'>
-                <p className='prices text-medium bold'>{AgeAttributes[0].mensual.monde[ageForJson]}€</p>
+              <p className='text-medium bold'>GreenFees</p>
+              <p>Prix moyen par Green Fee (18t)</p>
+              <div className='flex center price'>
+                <p className='prices text-medium bold'>22-75€</p>
                 <p className='period thin'>par mois</p>
-              </div>
-              <div className='price hide yearly'>
-                <div className='flex center'>
-                  <p className='prices text-medium bold'>{AgeAttributes[0].annual.monde[ageForJson]}€</p>
-                  <p className='period thin'>par ans</p>
-                </div>
-                
               </div>
             </div>
 
             <div className='card'>
-              <p className='text-medium bold'>Monde</p>
-              <p>L'abonnement sur la totalité de nos golfs</p>
-              <div className='flex center price monthly'>
-                <p className='prices text-medium bold'>{AgeAttributes[0].mensual.monde[ageForJson]}€</p>
-                <p className='period thin'>par mois</p>
-              </div>
-              <div className='price hide yearly'>
-                <div className='flex center'>
-                  <p className='prices text-medium bold'>{AgeAttributes[0].annual.monde[ageForJson]}€</p>
-                  <p className='period thin'>par ans</p>
-                </div>
-                
+              <p className='text-medium bold'>Forfait Littoral</p>
+              <p>5 Green Fees sur 15 golfs</p>
+              <div className='flex center price'>
+                <p className='prices text-medium bold'>229€</p>
+                <p className='period thin'>sur une semaine</p>
               </div>
             </div>
 
             <div className='card'>
-              <p className='text-medium bold'>Monde</p>
-              <p>L'abonnement sur la totalité de nos golfs</p>
-              <div className='flex center price monthly'>
-                <p className='prices text-medium bold'>{AgeAttributes[0].mensual.monde[ageForJson]}€</p>
-                <p className='period thin'>par mois</p>
-              </div>
-              <div className='price hide yearly'>
-                <div className='flex center'>
-                  <p className='prices text-medium bold'>{AgeAttributes[0].annual.monde[ageForJson]}€</p>
-                  <p className='period thin'>par ans</p>
-                </div>
-                
+              <p className='text-medium bold'>Forfait Azur</p>
+              <p>2 Green Fees utilisables sur 2 golfs</p>
+              <div className='flex center price'>
+                <p className='prices text-medium bold'>100€</p>
+                <p className='period thin'>sur une semaine</p>
               </div>
             </div>
 
@@ -296,59 +275,7 @@ const Offres = () => {
 
       <div className='priceSection'>
         <h2 className='text-large'>Abonnement Monogolf</h2>
-        <p className='thin'>Les tarifs de nos green fees sont variables avec les golfs</p>
-
-        <div className='gridPrice'>
-
-            <div className='card'>
-              <p className='text-medium bold'>Monde</p>
-              <p>L'abonnement sur la totalité de nos golfs</p>
-              <div className='flex center price monthly'>
-                <p className='prices text-medium bold'>{AgeAttributes[0].mensual.monde[ageForJson]}€</p>
-                <p className='period thin'>par mois</p>
-              </div>
-              <div className='price hide yearly'>
-                <div className='flex center'>
-                  <p className='prices text-medium bold'>{AgeAttributes[0].annual.monde[ageForJson]}€</p>
-                  <p className='period thin'>par ans</p>
-                </div>
-                
-              </div>
-            </div>
-
-            <div className='card'>
-              <p className='text-medium bold'>Monde</p>
-              <p>L'abonnement sur la totalité de nos golfs</p>
-              <div className='flex center price monthly'>
-                <p className='prices text-medium bold'>{AgeAttributes[0].mensual.monde[ageForJson]}€</p>
-                <p className='period thin'>par mois</p>
-              </div>
-              <div className='price hide yearly'>
-                <div className='flex center'>
-                  <p className='prices text-medium bold'>{AgeAttributes[0].annual.monde[ageForJson]}€</p>
-                  <p className='period thin'>par ans</p>
-                </div>
-                
-              </div>
-            </div>
-
-            <div className='card'>
-              <p className='text-medium bold'>Monde</p>
-              <p>L'abonnement sur la totalité de nos golfs</p>
-              <div className='flex center price monthly'>
-                <p className='prices text-medium bold'>{AgeAttributes[0].mensual.monde[ageForJson]}€</p>
-                <p className='period thin'>par mois</p>
-              </div>
-              <div className='price hide yearly'>
-                <div className='flex center'>
-                  <p className='prices text-medium bold'>{AgeAttributes[0].annual.monde[ageForJson]}€</p>
-                  <p className='period thin'>par ans</p>
-                </div>
-                
-              </div>
-            </div>
-
-        </div>
+        <p className='thin'>Des abonnements sur site unique sont disponibles, contactez votre golf pour en savoir plus</p>
 
       </div>
 
@@ -356,55 +283,34 @@ const Offres = () => {
 
       <div className='priceSection'>
         <h2 className='text-large'>Offres</h2>
-        <p className='thin'>Les tarifs de nos green fees sont variables avec les golfs</p>
+        <p className='thin'>De nouvelles offres toute l'année</p>
 
         <div className='gridPrice'>
 
           <div className='card'>
-            <p className='text-medium bold'>Monde</p>
-            <p>L'abonnement sur la totalité de nos golfs</p>
+            <p className='text-medium bold'>Ecole de Golf</p>
+            <p>Pour le premier swing (enfant)</p>
             <div className='flex center price monthly'>
-              <p className='prices text-medium bold'>{AgeAttributes[0].mensual.monde[ageForJson]}€</p>
-              <p className='period thin'>par mois</p>
-            </div>
-            <div className='price hide yearly'>
-              <div className='flex center'>
-                <p className='prices text-medium bold'>{AgeAttributes[0].annual.monde[ageForJson]}€</p>
-                <p className='period thin'>par ans</p>
-              </div>
-              
+              <p className='prices text-medium bold'>180€</p>
+              <p className='period thin'>par ans</p>
             </div>
           </div>
 
           <div className='card'>
-            <p className='text-medium bold'>Monde</p>
-            <p>L'abonnement sur la totalité de nos golfs</p>
-            <div className='flex center price monthly'>
-              <p className='prices text-medium bold'>{AgeAttributes[0].mensual.monde[ageForJson]}€</p>
+            <p className='text-medium bold'>Initiations</p>
+            <p>Découvrez le golf durant l'été</p>
+            <div className='flex center price'>
+              <p className='prices text-medium bold'>Gratuit</p>
               <p className='period thin'>par mois</p>
-            </div>
-            <div className='price hide yearly'>
-              <div className='flex center'>
-                <p className='prices text-medium bold'>{AgeAttributes[0].annual.monde[ageForJson]}€</p>
-                <p className='period thin'>par ans</p>
-              </div>
-              
             </div>
           </div>
 
           <div className='card'>
-            <p className='text-medium bold'>Monde</p>
-            <p>L'abonnement sur la totalité de nos golfs</p>
-            <div className='flex center price monthly'>
-              <p className='prices text-medium bold'>{AgeAttributes[0].mensual.monde[ageForJson]}€</p>
-              <p className='period thin'>par mois</p>
-            </div>
-            <div className='price hide yearly'>
-              <div className='flex center'>
-                <p className='prices text-medium bold'>{AgeAttributes[0].annual.monde[ageForJson]}€</p>
-                <p className='period thin'>par ans</p>
-              </div>
-              
+            <p className='text-medium bold'>Nouveaux</p>
+            <p>Réductions sur le premier abonnement</p>
+            <div className='flex center price'>
+              <p className='prices text-medium bold'>-20%</p>
+              <p className='period thin'>sur abonnement</p>
             </div>
           </div>
 

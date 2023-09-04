@@ -74,7 +74,7 @@ const Navbar = () => {
                   <Link to="/Nos-Offres" className='links flex center' onClick={handleShowNavbar}><FontAwesomeIcon icon={faTags} /><p>Nos Offres</p></Link>
                 </li>
                 <li>
-                  <Link to="/about" className='links flex center' onClick={handleShowNavbar}><FontAwesomeIcon icon={faNewspaper} /><p>Actualité</p></Link>
+                  <Link to="/Actualites" className='links flex center' onClick={handleShowNavbar}><FontAwesomeIcon icon={faNewspaper} /><p>Actualité</p></Link>
                 </li>
                 <li>
                   <Link to="/contact" className='links flex center' onClick={handleShowNavbar}><FontAwesomeIcon icon={faShop} /><p>Proshop</p></Link>

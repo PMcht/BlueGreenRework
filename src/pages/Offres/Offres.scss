@@ -158,12 +158,13 @@
       }
       
     .priceSection{
-        margin: 10rem 0 5rem;
-        padding: 0 20rem;
+        margin: 10rem auto 5rem;
+        width: calc(100% - 40rem);
         position: relative;
         height: fit-content;
         h2{
             position: relative;
+            width: fit-content;
             &:before{
                 content : '';
                 z-index: -1;
@@ -181,8 +182,8 @@
 
             .switch{
                 position:absolute;
-                top: 0;
-                right: 20rem;
+                top: 1rem;
+                right: 3rem;
             }
 
             .switch-wrapper {
@@ -259,7 +260,7 @@
             grid-template-columns: repeat(auto-fill, minmax(min(30rem, 100%), auto));
             row-gap: 10%;
             margin-top: 3rem;
-            
+            justify-content: space-around;
             .card{
                 width: 30rem;
                 text-align: center;
@@ -292,3 +293,22 @@
 }
 
 
+@media (max-width: 1500px) {
+  #offres{
+    text-align: center;
+    h2{
+      margin: auto !important;
+    }
+  }
+  .priceSection{
+    width: 100% !important;
+  }
+  .switch{
+    position:unset !important;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+}
