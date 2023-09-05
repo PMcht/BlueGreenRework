@@ -17,8 +17,8 @@ const Home = () => {
 
           <div className='halfWidth'>
 
-              <p className='thin text-small'>Golfs Bluegreen</p>
-              <h1 className='bold'>N°1 du Golf en France.</h1>
+              <p className='thin text-small'>N°1 du Golf en France.</p>
+              <h1 className='bold text-large'>Golfs Bluegreen</h1>
               <p className='text-smaller'>46 Golfs à découvrir dans toute la France, adaptés à tout niveaux, entourés des meilleurs professionnels et d'infrastructures high-tech.</p>
               <Link>
                 <div className='button text-smaller'>

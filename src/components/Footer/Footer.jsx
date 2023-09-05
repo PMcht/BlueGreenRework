@@ -8,10 +8,10 @@ const Footer = () => {
   return (
     <footer  className="footer-basic">
         <ul className='flex justify-center center' id="socials"> 
-            <li><Link><FontAwesomeIcon icon={faFacebook} className='Facebook' /></Link> </li>
-            <li><Link><FontAwesomeIcon icon={faInstagram} className='Instagram' /></Link> </li> 
-            <li><Link><FontAwesomeIcon icon={faTwitter} className='Twitter' /></Link> </li> 
-            <li><Link><FontAwesomeIcon icon={faYoutube} className='Youtube' /></Link> </li> 
+            <li><Link to='https://www.facebook.com/golfsbluegreen' target="_blank"><FontAwesomeIcon icon={faFacebook} className='Facebook' /></Link> </li>
+            <li><Link to='https://www.instagram.com/golfsbluegreen/' target="_blank"><FontAwesomeIcon icon={faInstagram} className='Instagram' /></Link> </li> 
+            <li><Link to='https://twitter.com/GolfsBlueGreen' target="_blank"><FontAwesomeIcon icon={faTwitter} className='Twitter' /></Link> </li> 
+            <li><Link to='https://www.youtube.com/channel/UCdeO_Rr2xb5J0sXVXhIEMNw' target="_blank"><FontAwesomeIcon icon={faYoutube} className='Youtube' /></Link> </li> 
         </ul>
         <ul className="flex center justify-center">
             <li className="list-inline-item"><Link href="#">Home</Link></li>

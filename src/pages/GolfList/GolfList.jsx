@@ -52,11 +52,14 @@ const GolfList = () => {
   return (
     <>
         
-        <div id="GolfList" className='flex center justify flex-h margin topMargin'>
+        <div id="GolfList" className='flex center justify flex-h margin'>
 
+          <div className='topBanner flex flex-h center justify-center'>
             <h1>Nos 46 Golfs</h1>
             <h3>Trouvez un golf près de chez vous!</h3>
             <input id="search" type="search" placeholder="Rechercher..." autoFocus onChange={(e) => {onInputChange(e.target)}} />
+          </div>
+
 
             {isResults ? (
 
@@ -68,7 +71,7 @@ const GolfList = () => {
                 {GolfFiltered.map((golf) => {
                 return (
 
-                    <FadeTransition key={golf.id} >
+                    <FadeTransition key={golf.id} className='golfCard'>
 
                             <div className='golfImageContainer flex center'>
                                 <img src={golf.img} className='golfImage'/>

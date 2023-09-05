@@ -4,17 +4,21 @@
     left: 0;
     z-index: 10; 
     width: 100%;
+
     .navMenu{
-      background-color: #ffffff9c;
-      backdrop-filter: blur( 7.5px );
-      -webkit-backdrop-filter: blur( 7.5px );
-      width: fit-content;
-      margin: 1rem auto 0;
-      border-radius: 1rem;
-      padding: 0rem 1rem;
-      margin: 1rem auto 0;
-      max-width: 1100px;
+      background-color: #1a2c36;
+      padding: 0rem 10rem;
+      min-height: 6rem;
+      justify-content: space-between;
     }
+    ul{
+      margin: 0;
+    }
+}
+
+.mainLogo{
+  height: 4rem;
+  margin-right: 1rem;
 }
 
 .menu-icon {
@@ -23,21 +27,29 @@
 
 .nav-elements {
     li{
+      p{
+        margin: 1rem 0;;
+      }
         svg{
             margin-right: 0.6rem;
+            color: #10bae7
         }
     }
 }
 
-.nav-elements ul {
+.nav-test{
+  display:none;
+}
+
+.nav-elements ul, .nav-test ul {
 display: flex;
 justify-content: space-between;
 list-style-type: none;
 padding: 0;
 }
 
-.nav-elements ul a {
-font-size: 16px;
+.nav-elements ul a, .nav-test ul a {
+font-size: 18px;
 font-weight: 400;
 color: #2f234f;
 text-decoration: none;
@@ -55,7 +67,7 @@ color: #18272F;
   width: 100%;
   height: 2px;
   border-radius: 4px;
-  background-color: #18272F;
+  background-color: #10bae7;
   bottom: 3px;
   left: 0;
   transform-origin: right;
@@ -69,95 +81,74 @@ color: #18272F;
 }
 
 .espaceClient{
-  position: absolute;
   font-size: 1.5rem;
+  z-index: 100;
   width: 3rem;
   height: 3rem;
-  top: 1.2rem;
-  right: 2rem;
-  background-color: #ffffff9c;
-  backdrop-filter: blur( 7.5px );
-  -webkit-backdrop-filter: blur( 7.5px );
-  border-radius: 100%;
   svg{
     padding: 0;
     margin: 0%;
   }
 }
 
-@media (max-width: 700px) {
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-    &.openMenu{
-      position: absolute;
-      right: 2rem;
-      top: 2rem;
-    }
-    &.close{
-      margin: auto;
-      width: 5rem;
-      height: 5rem;
-      font-size: 4rem;
-      border: 2px solid #18272F;
-      border-radius: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      svg{
-        margin: 0;
-      }
-    }
-  }
+@media (max-width: 1200px) {
 
-  .navbar {
-    left:unset;
-    right: 0;
+  .navbar{
     .navMenu{
-      background-color:transparent;
-      backdrop-filter: unset;
-      -webkit-backdrop-filter: unset;
+      padding: 0rem;
     }
+    
+  }
 }
 
+@media (max-width: 950px) {
 
-  .nav-elements {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: 100vw;
-    transform: translateY(-100vh);
+  .nav-elements{
+    position: fixed;
+    top: -100vh;
+    left: 0;
     height: 100vh;
-    transition: transform 0.3s ease-in;
-    overflow: hidden;
-    background-color: #ffffffc5;
-    backdrop-filter: blur( 7.5px );
-    -webkit-backdrop-filter: blur( 7.5px );
-    &.active {
-      transition: transform 0.3s ease-in;
-      transform: translateY(0);
+    width: 100vw;
+    background: #fff;
+    transition: all .3s ease-in-out;
+    z-index: 11;
+    
+    *{
+      color: #000 !important;
+    }
+    &.true{
+      transform: translateY(100vh);
+    }
+    ul{
       display: flex;
+      height: 100%;
       justify-content: center;
       align-items: center;
-    }
-    ul {
       flex-direction: column;
+      .mainLogo{
+        display: none;
+      }
       li{
-        margin: 1.4rem;
-        .links{
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          font-size: 2rem;
-          p{
-            margin: 1rem;
-          }
-          svg{
-            margin: auto;
-          }
-        }
+        margin: 1rem 0;
+      }
+      *{
+        font-size: 2rem;
       }
     }
   }
+  .nav-test{
+    display:flex;
+    z-index: 9;
+    background: #1a2c36;
+    width: 100%;
+    svg{
+      color: #fff;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  .mainLogo{
+    width: 15rem;
+  }
+
 }

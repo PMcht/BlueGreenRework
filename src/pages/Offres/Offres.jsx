@@ -244,7 +244,11 @@ const Offres = () => {
             <div className='card'>
               <p className='text-medium bold'>GreenFees</p>
               <p>Prix moyen par Green Fee (18t)</p>
-              <div className='flex center price'>
+              <div className='flex center price monthly'>
+                <p className='prices text-medium bold'>22-75€</p>
+                <p className='period thin'>par mois</p>
+              </div>
+              <div className='flex center price yearly hide'>
                 <p className='prices text-medium bold'>22-75€</p>
                 <p className='period thin'>par mois</p>
               </div>
@@ -253,7 +257,11 @@ const Offres = () => {
             <div className='card'>
               <p className='text-medium bold'>Forfait Littoral</p>
               <p>5 Green Fees sur 15 golfs</p>
-              <div className='flex center price'>
+              <div className='flex center price monthly'>
+                <p className='prices text-medium bold'>229€</p>
+                <p className='period thin'>sur une semaine</p>
+              </div>
+              <div className='flex center price yearly hide'>
                 <p className='prices text-medium bold'>229€</p>
                 <p className='period thin'>sur une semaine</p>
               </div>
@@ -262,7 +270,11 @@ const Offres = () => {
             <div className='card'>
               <p className='text-medium bold'>Forfait Azur</p>
               <p>2 Green Fees utilisables sur 2 golfs</p>
-              <div className='flex center price'>
+              <div className='flex center price monthly'>
+                <p className='prices text-medium bold'>100€</p>
+                <p className='period thin'>sur une semaine</p>
+              </div>
+              <div className='flex center price yearly hide'>
                 <p className='prices text-medium bold'>100€</p>
                 <p className='period thin'>sur une semaine</p>
               </div>
@@ -294,12 +306,20 @@ const Offres = () => {
               <p className='prices text-medium bold'>180€</p>
               <p className='period thin'>par ans</p>
             </div>
+            <div className='flex center price yearly hide'>
+              <p className='prices text-medium bold'>180€</p>
+              <p className='period thin'>par ans</p>
+            </div>
           </div>
 
           <div className='card'>
             <p className='text-medium bold'>Initiations</p>
             <p>Découvrez le golf durant l'été</p>
-            <div className='flex center price'>
+            <div className='flex center price mensual'>
+              <p className='prices text-medium bold'>Gratuit</p>
+              <p className='period thin'>par mois</p>
+            </div>
+            <div className='flex center price yearly hide'>
               <p className='prices text-medium bold'>Gratuit</p>
               <p className='period thin'>par mois</p>
             </div>
@@ -308,7 +328,11 @@ const Offres = () => {
           <div className='card'>
             <p className='text-medium bold'>Nouveaux</p>
             <p>Réductions sur le premier abonnement</p>
-            <div className='flex center price'>
+            <div className='flex center price mensual'>
+              <p className='prices text-medium bold'>-20%</p>
+              <p className='period thin'>sur abonnement</p>
+            </div>
+            <div className='flex center price yearly hide'>
               <p className='prices text-medium bold'>-20%</p>
               <p className='period thin'>sur abonnement</p>
             </div>

@@ -6,6 +6,7 @@ import Navbar from './components/Navbar/Navbar'
 import Offres from './pages/Offres/Offres'
 import Footer from './components/Footer/Footer'
 import Actus from './pages/Actus/Actus'
+import Proshop from './pages/Proshop/Proshop'
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
           <Route path='/BlueGreenRework' element={<Home />} />
           <Route path='/Nos-Golfs' element={<GolfList />} />
           <Route path='/Nos-Offres' element={<Offres />} />
-          <Route path='/Proshop' element={<Home />} />
+          <Route path='/Proshop' element={<Proshop />} />
           <Route path='/Actualites' element={<Actus />} />
           <Route path='/Mon-Espace' element={<Home />} />
       </Routes>
