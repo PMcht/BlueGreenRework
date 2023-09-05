@@ -12,7 +12,7 @@ const Pricing = () => {
     <div className='' id="cardPrices">
 
       <Link to="/Nos-Offres" className='card flex flex-h justify shadow'>
-        <div className='illustration' style={{backgroundImage: "url('/pages/pricing/2.jpg')"}} />
+        <div className='illustration' style={{backgroundImage: "url('/BlueGreenRework/pages/pricing/2.jpg')"}} />
         <div className='cardText'>
           <p className='text-small gray'>Invité</p>
           <h2 className='text-medium'>GreenFee</h2>
@@ -27,7 +27,7 @@ const Pricing = () => {
             <h2 className='text-medium'>Adultes</h2>
             <p className='text-smaller gray'>à partir de </p>
           </div>
-          <div className='illustration' style={{backgroundImage: "url('/pages/pricing/1.jpg')"}}/>
+          <div className='illustration' style={{backgroundImage: "url('/BlueGreenRework/pages/pricing/1.jpg')"}}/>
       </Link>
 
       <Link to="/Nos-Offres" className='card flex flex-h justify shadow'>
@@ -36,7 +36,7 @@ const Pricing = () => {
             <h2 className='text-medium'>Jeunes</h2>
             <p className='text-smaller gray'>à partir de </p>
           </div>
-          <div className='illustration' style={{backgroundImage: "url('/pages/pricing/3.jpg')"}} />
+          <div className='illustration' style={{backgroundImage: "url('/BlueGreenRework/pages/pricing/3.jpg')"}} />
       </Link>
 
       <Link to="/Nos-Offres" className='card flex flex-h justify shadow'>
@@ -45,7 +45,7 @@ const Pricing = () => {
             <h2 className='text-medium'>Juniors</h2>
             <p className='text-smaller gray'>à partir de </p>
           </div>
-          <div className='illustration' style={{backgroundImage: "url('/pages/pricing/4.jpeg')"}} />
+          <div className='illustration' style={{backgroundImage: "url('/BlueGreenRework/pages/pricing/4.jpeg')"}} />
       </Link>
 
     </div>

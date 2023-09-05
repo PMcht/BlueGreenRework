@@ -20,7 +20,7 @@ const Navbar = () => {
             <div className="nav-test">
               <ul>
                 <li>
-                  <Link to="/BlueGreenRework" className='flex center justify-center' onClick={() => setShowNavbar(false)}><img src="/navbar/LogoSide.svg" className='mainLogo' /></Link>
+                  <Link to="/BlueGreenRework" className='flex center justify-center' onClick={() => setShowNavbar(false)}><img src="/BlueGreenRework/navbar/LogoSide.svg" className='mainLogo' /></Link>
                 </li>
                 <li className='flex center'>
                   <FontAwesomeIcon onClick={() => setShowNavbar(!showNavbar)} icon={faBars} />
@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className={`nav-elements  ${showNavbar}`}>
               <ul>
                 <li>
-                  <Link to="/BlueGreenRework" className='flex center justify-center' onClick={() => setShowNavbar(false)}><img src="/navbar/LogoSide.svg" className='mainLogo' /></Link>
+                  <Link to="/BlueGreenRework" className='flex center justify-center' onClick={() => setShowNavbar(false)}><img src="/BlueGreenRework/navbar/LogoSide.svg" className='mainLogo' /></Link>
                 </li>
                 <li className='flex center justify-center'>
                   <Link to="/Nos-Golfs" className='links flex center' onClick={() => setShowNavbar(false)}><FontAwesomeIcon icon={faGolfBall} /><p>Nos Golfs</p></Link>

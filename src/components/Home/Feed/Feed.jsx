@@ -11,20 +11,20 @@ const Feed = () => {
 
         <div id="instaGrid">
 
-            <div className="square fullImg"><img src='/pages/Insta/1.jpg' className='instaIMG' /></div>
-            <div className="square fullImg"><img src='/pages/Insta/2.jpg' className='instaIMG' /></div>
-            <div className="square fullImg"><img src='/pages/Insta/3.jpg' className='instaIMG' /></div>
-            <div className="square fullImg"><img src='/pages/Insta/4.jpg' className='instaIMG' /></div>
-            <div className="square fullImg"><img src='/pages/Insta/5.jpg' className='instaIMG' /></div>
-            <div className="square fullImg"><img src='/pages/Insta/6.jpg' className='instaIMG' /></div>
-            <div className="square fullImg"><img src='/pages/Insta/7.jpg' className='instaIMG' /></div>
-            <div className="square fullImg"><img src='/pages/Insta/8.jpg' className='instaIMG' /></div>
-            <div className="square fullImg"><img src='/pages/Insta/9.jpg' className='instaIMG' /></div>
-            <div className="square fullImg"><img src='/pages/Insta/10.jpg' className='instaIMG' /></div>
-            <div className="square fullImg"><img src='/pages/Insta/11.jpg' className='instaIMG' /></div>
-            <div className="square fullImg"><img src='/pages/Insta/12.jpg' className='instaIMG' /></div>
-            <div className="square fullImg"><img src='/pages/Insta/13.jpg' className='instaIMG' /></div>
-            <div className="square fullImg"><img src='/pages/Insta/14.jpg' className='instaIMG' /></div>
+            <div className="square fullImg"><img src='/BlueGreenRework/pages/Insta/1.jpg' className='instaIMG' /></div>
+            <div className="square fullImg"><img src='/BlueGreenRework/pages/Insta/2.jpg' className='instaIMG' /></div>
+            <div className="square fullImg"><img src='/BlueGreenRework/pages/Insta/3.jpg' className='instaIMG' /></div>
+            <div className="square fullImg"><img src='/BlueGreenRework/pages/Insta/4.jpg' className='instaIMG' /></div>
+            <div className="square fullImg"><img src='/BlueGreenRework/pages/Insta/5.jpg' className='instaIMG' /></div>
+            <div className="square fullImg"><img src='/BlueGreenRework/pages/Insta/6.jpg' className='instaIMG' /></div>
+            <div className="square fullImg"><img src='/BlueGreenRework/pages/Insta/7.jpg' className='instaIMG' /></div>
+            <div className="square fullImg"><img src='/BlueGreenRework/pages/Insta/8.jpg' className='instaIMG' /></div>
+            <div className="square fullImg"><img src='/BlueGreenRework/pages/Insta/9.jpg' className='instaIMG' /></div>
+            <div className="square fullImg"><img src='/BlueGreenRework/pages/Insta/10.jpg' className='instaIMG' /></div>
+            <div className="square fullImg"><img src='/BlueGreenRework/pages/Insta/11.jpg' className='instaIMG' /></div>
+            <div className="square fullImg"><img src='/BlueGreenRework/pages/Insta/12.jpg' className='instaIMG' /></div>
+            <div className="square fullImg"><img src='/BlueGreenRework/pages/Insta/13.jpg' className='instaIMG' /></div>
+            <div className="square fullImg"><img src='/BlueGreenRework/pages/Insta/14.jpg' className='instaIMG' /></div>
 
         </div>
 

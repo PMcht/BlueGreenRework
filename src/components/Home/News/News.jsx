@@ -11,7 +11,7 @@ const News = () => {
         <div id="cardNews">
 
             <Link className='card flex flex-h justify shadow'>
-              <div className='illustration' style={{backgroundImage: "url('/articles/1.jpg')"}} />
+              <div className='illustration' style={{backgroundImage: "url('/BlueGreenRework/articles/1.jpg')"}} />
               <div className='cardText'>
                 <p className='text-smaller gray'>30 Août 2023</p>
                 <h2 className='text-medium'>Les abonnements Grand Paris et Paris Sud s’agrandissent</h2>
@@ -20,7 +20,7 @@ const News = () => {
             </Link>
 
             <Link className='card flex flex-h justify shadow'>
-              <div className='illustration' style={{backgroundImage: "url('/articles/2.jpg')"}} />
+              <div className='illustration' style={{backgroundImage: "url('/BlueGreenRework/articles/2.jpg')"}} />
               <div className='cardText'>
                 <p className='text-smaller gray'>29 Août 2023</p>
                 <h2 className='text-medium'>La promo de la rentrée chez Bluegreen</h2>
