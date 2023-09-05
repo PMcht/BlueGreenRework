@@ -52,7 +52,7 @@ const Benefits = () => {
                     <div className='textSlide'>
                       <h2 className='text-large'>46 Golfs partout en France</h2>
                       <p className='text-small'>Où que vous soyez, il y a un golf Bluegreen à proximité car notre réseau inclu un total de 46 golfs en France</p>
-                      <Link>
+                      <Link to="Nos-Golfs">
                           <div className='button text-smaller'>
                             Découvrez nos Golfs
                           </div>
@@ -72,7 +72,7 @@ const Benefits = () => {
                       <p className='text-small gray notOnMobile'></p>
                       <h2 className='text-large'>Découvrez nos Proshops connectés</h2>
                       <p className='text-small'>Profitez d'un large choix d'équipements pour vos parties ; clubs et vêtements livrés à votre proshop</p>
-                      <Link>
+                      <Link to="Proshop">
                           <div className='button text-smaller'>
                             Boutique en Ligne
                           </div>

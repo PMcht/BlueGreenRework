@@ -20,7 +20,7 @@ const Home = () => {
               <p className='thin text-small'>N°1 du Golf en France.</p>
               <h1 className='bold text-large'>Golfs Bluegreen</h1>
               <p className='text-smaller'>46 Golfs à découvrir dans toute la France, adaptés à tout niveaux, entourés des meilleurs professionnels et d'infrastructures high-tech.</p>
-              <Link>
+              <Link to="/Nos-Golfs">
                 <div className='button text-smaller'>
                   Découvrez BlueGreen
                 </div>

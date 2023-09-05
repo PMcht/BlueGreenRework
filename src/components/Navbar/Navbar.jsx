@@ -44,6 +44,9 @@ const Navbar = () => {
                 <li className='flex center justify-center'>
                   <Link to="/Proshop" className='links flex center' onClick={() => setShowNavbar(false)}><FontAwesomeIcon icon={faShop} /><p>Proshop</p></Link>
                 </li>
+                <li className='flex center justify-center'>
+                  <Link className='close flex center' onClick={() => setShowNavbar(false)}><FontAwesomeIcon icon={faClose} /></Link>
+                </li>
               </ul>
             </div>
             <Link className='espaceClient flex center justify-center '>

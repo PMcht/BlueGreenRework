@@ -3,6 +3,8 @@ import './GolfList.scss'
 import { GolfAttributes } from '../../utils/Lists/Golfs';
 import { Link } from 'react-router-dom';
 import { Transition, TransitionGroup } from 'react-transition-group';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGolfBallTee } from '@fortawesome/free-solid-svg-icons';
 
 const GolfList = () => {
 
@@ -73,12 +75,20 @@ const GolfList = () => {
 
                     <FadeTransition key={golf.id} className='golfCard'>
 
-                            <div className='golfImageContainer flex center'>
-                                <img src={golf.img} className='golfImage'/>
-                            </div>
+                            <div className='golfImage' style={{backgroundImage:`url(${golf.img})`}} />
 
-                            <div className='golfName'>
-                                <p>Golf de {golf.name}</p>
+                            <div className='golfDescription'>
+                                <p className='bold text-small'>Golf de {golf.name}</p>
+                                <p>Baden, Bretagne</p>
+                                <div className='icons flex center'>
+                                    <div className='icon flex center justify-center'>
+                                      <FontAwesomeIcon icon={faGolfBallTee} /><p>18</p>
+                                    </div>
+                                    <div className='icon flex center justify-center'>
+                                      <FontAwesomeIcon icon={faGolfBallTee} /><p>9</p>
+                                    </div>
+                                </div>
+                                <p className='thin'>Restaurant, Practice couvert, Proshop ...</p>
                             </div>
 
                     </FadeTransition>

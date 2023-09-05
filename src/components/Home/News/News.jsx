@@ -30,7 +30,7 @@ const News = () => {
 
         </div>
 
-        <Link>
+        <Link to="Actualites">
         <div className='button text-smaller'>
           Toutes les actus
         </div>

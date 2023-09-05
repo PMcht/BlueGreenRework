@@ -1,48 +1,64 @@
 #golfContainer{
     width: 100%;
-    gap: 3rem;
+    gap: 1rem;
     padding: 0 10rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(40rem, 100%), 1fr));
     justify-items: center;
     align-items: center;
     .golfCard{
         width: 100%;
-        min-width: 20rem;
-        max-width: 25rem;
         border-radius: 1rem;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        min-height: 20rem;
         height: fit-content;
-        transition: all .3s ease-in-out;
-        &:hover{
-            transform: scale(1.1);
-        }
-    }
-    .golfImageContainer{
-        width: 100%;
-        height: 12rem;
-        border-radius: 1rem 1rem 0 0;
+        transition: box-shadow .1s ease-in-out;
+        transition: transform .3s ease-in-out;
         overflow: hidden;
-        justify-content: flex-start;
-        .golfImage{
-            width: 100%;
-            transition: all .3s ease-in-out;
-        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5%;
+        padding: 3rem;
         &:hover{
-            .golfImage{
-                transform: scale(1.02) rotate(-1deg);
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        .golfImage{
+            height: 15rem;
+            aspect-ratio: 4/3;
+            border-radius: 1rem;
+            background-position: center;
+            background-size: cover;
+        }
+        .golfDescription{
+            width: 100%;
+            .bold{
+                margin: 0;
             }
         }
-    }
-    .golfName{
-        padding: 0 1rem
+        .icons{
+            width: fit-content;
+            .icon{
+                font-size: 1rem;
+                font-weight: 200;
+                background: #e2e1e15d;
+                margin: 1rem 0.4rem;
+                padding: 0.6rem;
+                border-radius: 0.4rem;
+                *{
+                    margin: 0;
+                }
+                svg{
+                    margin-right: 0.4rem;
+                }
+                
+            }
+        }
     }
 }
 
 
 
 .topBanner{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 70%;
     margin: auto;
     background: #fff;
@@ -51,31 +67,51 @@
     padding: 5rem 0 3rem;
     border-radius: 1rem;
     position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     #search {
         position: absolute;
         bottom: -2rem;
-        height: 5rem;
-        min-width: 25rem;
-        width: 50%;
-        border: 0;
-        color: #2f2f2f;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        font-size: 1.8rem;
-      }
-      #search[type="search"] {
-        outline: 0; // <-- shold probably remove this for better accessibility, adding for demo aesthetics for now.
-        background: #fff;
-        padding: 0 1.6rem;
-        border-radius: .7rem;
-        appearance: none; //for iOS input[type="search"] roundedness issue. border-radius alone doesn't work
-        transition: all .3s cubic-bezier(0, 0, 0.43, 1.49);
-        z-index: 1;
+        
+    
       }
 }
 
 
+  input[type="search"] {
+    min-width: 25rem;
+    height: 5rem;
+    width: 50%;
+    border: 0;
+    font-size: 1.8rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    outline: 0; // <-- shold probably remove this for better accessibility, adding for demo aesthetics for now.
+    background: #fff;
+    padding: 0 1.6rem;
+    border-radius: .7rem;
+    appearance: none; //for iOS input[type="search"] roundedness issue. border-radius alone doesn't work
+    transition: all .3s cubic-bezier(0, 0, 0.43, 1.49);
+    z-index: 1;
+  }
+
+
+@media (max-width: 1450px) {
+    #golfContainer{
+        padding: 0rem;
+    }
+}
+
 @media (max-width: 700px) {
     .topBanner{
         width: 100%;
+    }
+    #golfContainer{
+        .golfCard{
+            flex-direction: column;
+            width: 80%;
+            margin: auto;
+            .icons{
+                margin: auto;
+            }
+        }
     }
 }
