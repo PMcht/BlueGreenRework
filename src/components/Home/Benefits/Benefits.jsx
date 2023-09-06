@@ -31,7 +31,7 @@ const Benefits = () => {
                   <p className='backgroundName'>APP MOBILE</p>
                   <div className='flex center justify-center'>
                     
-                    <img src='./pages/Slider/appMock.png' className='slideIMG' />
+                    <img src='./pages/Slider/AppMock.webp' className='slideIMG' />
                     <div className='textSlide'>
                       <p className='text-small gray notOnMobile'>Notre application mobile</p>
                       <h2 className='text-large'>Application Bluegreen pour mobiles</h2>
@@ -67,7 +67,7 @@ const Benefits = () => {
                   <p className='backgroundName'>PROSHOP CONNECTES</p>
                   <div className='flex center justify-center'>
                     
-                    <img src='./pages/Slider/Proshop.png' className='slideIMG' />
+                    <img src='./pages/Slider/Proshop.webp' className='slideIMG' />
                     <div className='textSlide'>
                       <p className='text-small gray notOnMobile'></p>
                       <h2 className='text-large'>Découvrez nos Proshops connectés</h2>

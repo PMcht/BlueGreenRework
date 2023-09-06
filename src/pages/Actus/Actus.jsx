@@ -14,7 +14,7 @@ const Actus = () => {
         <div id="cardNews">
 
             <Link className='card flex flex-h justify shadow'>
-            <div className='illustration' style={{backgroundImage: "url('/BlueGreenRework/articles/1.jpg')"}} />
+            <div className='illustration' style={{backgroundImage: "url('/BlueGreenRework/articles/1.webp')"}} />
             <div className='cardText'>
                 <p className='text-smaller gray'>30 Août 2023</p>
                 <h2 className='text-medium'>Les abonnements Grand Paris et Paris Sud s’agrandissent</h2>
@@ -23,7 +23,7 @@ const Actus = () => {
             </Link>
 
             <Link className='card flex flex-h justify shadow'>
-            <div className='illustration' style={{backgroundImage: "url('/BlueGreenRework/articles/2.jpg')"}} />
+            <div className='illustration' style={{backgroundImage: "url('/BlueGreenRework/articles/2.webp')"}} />
             <div className='cardText'>
                 <p className='text-smaller gray'>29 Août 2023</p>
                 <h2 className='text-medium'>La promo de la rentrée chez Bluegreen</h2>
@@ -33,7 +33,7 @@ const Actus = () => {
 
             
             <Link className='card flex flex-h justify shadow'>
-            <div className='illustration' style={{backgroundImage: "url('/BlueGreenRework/articles/3.jpg')"}} />
+            <div className='illustration' style={{backgroundImage: "url('/BlueGreenRework/articles/3.webp')"}} />
             <div className='cardText'>
                 <p className='text-smaller gray'>22 Août 2023</p>
                 <h2 className='text-medium'>Offre nouveaux abonnés</h2>
@@ -42,7 +42,7 @@ const Actus = () => {
             </Link>
 
             <Link className='card flex flex-h justify shadow'>
-            <div className='illustration' style={{backgroundImage: "url('/BlueGreenRework/articles/4.jpg')"}} />
+            <div className='illustration' style={{backgroundImage: "url('/BlueGreenRework/articles/4.webp')"}} />
             <div className='cardText'>
                 <p className='text-smaller gray'>14 Août 2023</p>
                 <h2 className='text-medium'>Découvrez les sélectionnés pour Miami</h2>
@@ -52,7 +52,7 @@ const Actus = () => {
 
             
             <Link className='card flex flex-h justify shadow'>
-            <div className='illustration' style={{backgroundImage: "url('/BlueGreenRework/articles/5.jpg')"}} />
+            <div className='illustration' style={{backgroundImage: "url('/BlueGreenRework/articles/5.webp')"}} />
             <div className='cardText'>
                 <p className='text-smaller gray'>19 Juillet 2023</p>
                 <h2 className='text-medium'>Parlons de la sécheresse des sols !</h2>
@@ -61,7 +61,7 @@ const Actus = () => {
             </Link>
 
             <Link className='card flex flex-h justify shadow'>
-            <div className='illustration' style={{backgroundImage: "url('/BlueGreenRework/articles/6.jpg')"}} />
+            <div className='illustration' style={{backgroundImage: "url('/BlueGreenRework/articles/6.webp')"}} />
             <div className='cardText'>
                 <p className='text-smaller gray'>28 Juin 2023</p>
                 <h2 className='text-medium'>C’est les soldes d’été chez Bluegreen et UGolf ! [Offre terminée]</h2>

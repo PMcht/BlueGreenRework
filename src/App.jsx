@@ -21,10 +21,10 @@ function App() {
           
           <Route path='BlueGreenRework' element={<Home />} />
           <Route path='Nos-Golfs' element={<GolfList />} />
-            <Route path='Nos-Offres' element={<Offres />} />
-            <Route path='Proshop' element={<Proshop />} />
-            <Route path='Actualites' element={<Actus />} />
-            <Route path='Mon-Espace' element={<Home />} />
+          <Route path='Nos-Offres' element={<Offres />} />
+          <Route path='Proshop' element={<Proshop />} />
+          <Route path='Actualites' element={<Actus />} />
+          <Route path='Mon-Espace' element={<Home />} />
 
       </Routes>
 

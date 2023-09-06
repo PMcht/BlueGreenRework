@@ -1,0 +1,16 @@
+#About{
+    min-height: 50vh;
+    padding: 10rem 0;
+    #aboutIcons{
+        gap: 5%;
+        width: 100%;
+        margin-top: 5rem;
+        .element{
+            svg{
+                width: 8rem;
+                height: auto;;
+            }
+        }
+    }
+
+}
