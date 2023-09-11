@@ -7,6 +7,7 @@ import Offres from './pages/Offres/Offres'
 import Footer from './components/Footer/Footer'
 import Actus from './pages/Actus/Actus'
 import Proshop from './pages/Proshop/Proshop'
+import HomePage from './components/Account/HomePage/HomePage'
 
 
 function App() {
@@ -19,12 +20,11 @@ function App() {
 
       <Routes>
           
-          <Route path='BlueGreenRework' element={<Home />} />
-          <Route path='Nos-Golfs' element={<GolfList />} />
-          <Route path='Nos-Offres' element={<Offres />} />
-          <Route path='Proshop' element={<Proshop />} />
-          <Route path='Actualites' element={<Actus />} />
-          <Route path='Mon-Espace' element={<Home />} />
+          <Route path='/BlueGreenRework' element={<Home />} />
+          <Route path='/BlueGreenRework/Nos-Golfs' element={<GolfList />} />
+          <Route path='/BlueGreenRework/Nos-Offres' element={<Offres />} />
+          <Route path='/BlueGreenRework/Proshop' element={<Proshop />} />
+          <Route path='/BlueGreenRework/Actualites' element={<Actus />} />
 
       </Routes>
 

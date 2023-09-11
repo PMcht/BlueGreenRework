@@ -12,6 +12,9 @@
     }
     .halfWidth{
         max-width: 50%;
+        p{
+            line-height: 1.7rem
+        }
     }
 }
 
@@ -68,7 +71,7 @@
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1280px) {
     #cardsHero{
         display: none;
     }

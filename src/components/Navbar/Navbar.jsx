@@ -33,23 +33,23 @@ const Navbar = () => {
                   <Link to="/BlueGreenRework" className='flex center justify-center' onClick={() => setShowNavbar(false)}><img src="/BlueGreenRework/navbar/LogoSide.svg" className='mainLogo' /></Link>
                 </li>
                 <li className='flex center justify-center'>
-                  <Link to="/Nos-Golfs" className='links flex center' onClick={() => setShowNavbar(false)}><FontAwesomeIcon icon={faGolfBall} /><p>Nos Golfs</p></Link>
+                  <Link to="/BlueGreenRework/Nos-Golfs" className='links flex center' onClick={() => setShowNavbar(false)}><FontAwesomeIcon icon={faGolfBall} /><p>Nos Golfs</p></Link>
                 </li>
                 <li className='flex center justify-center'>
-                  <Link to="/Nos-Offres" className='links flex center' onClick={() => setShowNavbar(false)}><FontAwesomeIcon icon={faTags} /><p>Nos Offres</p></Link>
+                  <Link to="/BlueGreenRework/Nos-Offres" className='links flex center' onClick={() => setShowNavbar(false)}><FontAwesomeIcon icon={faTags} /><p>Nos Offres</p></Link>
                 </li>
                 <li className='flex center justify-center'>
-                  <Link to="/Actualites" className='links flex center' onClick={() => setShowNavbar(false)}><FontAwesomeIcon icon={faNewspaper} /><p>Actualité</p></Link>
+                  <Link to="/BlueGreenRework/Actualites" className='links flex center' onClick={() => setShowNavbar(false)}><FontAwesomeIcon icon={faNewspaper} /><p>Actualité</p></Link>
                 </li>
                 <li className='flex center justify-center'>
-                  <Link to="/Proshop" className='links flex center' onClick={() => setShowNavbar(false)}><FontAwesomeIcon icon={faShop} /><p>Proshop</p></Link>
+                  <Link to="/BlueGreenRework/Proshop" className='links flex center' onClick={() => setShowNavbar(false)}><FontAwesomeIcon icon={faShop} /><p>Proshop</p></Link>
                 </li>
                 <li className='flex center justify-center'>
                   <Link className='close flex center' onClick={() => setShowNavbar(false)}><FontAwesomeIcon icon={faClose} /></Link>
                 </li>
               </ul>
             </div>
-            <Link className='espaceClient flex center justify-center '>
+            <Link to='/BlueGreenRework/Mon-Espace' className='espaceClient flex center justify-center '>
                 <FontAwesomeIcon icon={faUser} />
             </Link>
       </div>

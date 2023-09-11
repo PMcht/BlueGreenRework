@@ -1,0 +1,125 @@
+#proshop{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10rem 0;
+    .mySwiper{
+        width: 100%;
+        margin: 0rem auto 5rem;
+        aspect-ratio: 3.5/1;
+        .SwiperSlide{
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    #categories{
+        width: 90%;
+        margin: 0 auto 6rem;
+        .category{
+            min-width: 15rem;
+            min-height: 7rem;
+            padding: 0 1rem;
+            border: 1px solid rgba(128, 128, 128, 0.384);
+            &:hover p{
+                text-decoration: underline;
+            }
+            p{
+                font-size: 1.6rem;
+                min-width: 7rem;
+                margin-left: 1rem;
+            }
+            .categIMG{
+                max-height: 7rem;
+            }
+
+        }
+
+    }
+
+    #brands{
+        width: 90%;
+        margin: 5rem auto;
+        .category{
+            min-width: 9rem;
+            min-height: 5rem;
+            padding: 0 1rem;
+            border: 1px solid rgba(128, 128, 128, 0.384);
+            .categIMG{
+                max-width: 7rem
+            }
+
+        }
+
+    }
+
+    h2{
+        font-size: 4rem;;
+    }
+
+    .clubs{
+        border-radius: 2rem;
+        overflow: hidden;
+        max-width: 20rem;
+        margin: 1rem;
+    }
+
+    #proOpinion{
+        width: 85%;
+        min-height: 20vh;
+        margin: auto;
+        padding: 5rem;
+        background: rgba(10, 10, 235, 0.075);
+        border-radius: 1rem;
+        gap: 5%;
+        img{
+            border-radius: 1rem;
+            max-width: 50%;
+        }
+        #textOpinion{
+            width: 40%;
+            svg{
+                font-size: 1.6rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+
+
+}
+
+
+@media (max-width: 1200px) {
+    #proshop{
+        width: 100%;
+    
+        #proOpinion{
+            width: 90%;
+            flex-direction: column;
+            img{
+                max-width: 100%;
+            }
+            #textOpinion{
+                width: 100%;
+                *, .flex{
+                    text-align: center;
+                    justify-content: center;
+                }
+                
+            }
+        }
+    
+    
+    }
+  }
+
+  @media (max-width: 700px) {
+    #proshop{
+        #categories{
+            .category{
+                width: 80%;
+            }
+        }   
+    
+    }
+  }
+  

@@ -6,9 +6,11 @@
     width: 100%;
 
     .navMenu{
-      background-color: #1a2c36;
+      background-color: #1a2c36ef;
       padding: 0rem 10rem;
       min-height: 6rem;
+      backdrop-filter: blur( 7.5px );
+      -webkit-backdrop-filter: blur( 7.5px );
       justify-content: space-between;
     }
     ul{
